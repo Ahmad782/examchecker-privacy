@@ -27,7 +27,7 @@
 <body>
 <main>
 <h1>Privacy Policy</h1>
-<p class="meta">Exam Checker: AI Paper Marking (package <code>com.examchecker.app</code>) · Developer: Mikao · Effective 7 October 2026</p>
+<p class="meta">Exam Checker: AI Paper Marking (package <code>com.examchecker.app</code>) · Developer: Mikao · Effective 8 October 2026</p>
 
 <div class="card">
 <p><strong>In short:</strong> Exam Checker helps teachers make exam papers, scan students' answer sheets and check them. Scans, student names, roll numbers and marks stay on your phone. When the app needs AI to suggest a mark or write a paper, it sends only the question, your answer key and the student's answer, never a name, roll number, class, school name or a full page. We have no accounts, and we don't sell data. Ads, where shown, come from Google AdMob.</p>
@@ -52,6 +52,7 @@
 <tr><td>Generating an exam paper with AI</td><td>Class level, subject, chosen topics, number and types of questions, and paper language. No student information.</td><td>The same AI service or your chosen provider.</td></tr>
 <tr><td>Downloading the optional on-device AI model</td><td>A normal file download request.</td><td>Hugging Face (where the Gemma model files are hosted).</td></tr>
 <tr><td>School question bank sync (optional, off unless you set it up)</td><td>Questions, answer keys and verified answer texts from your question bank. No student names or roll numbers.</td><td>The server address you enter.</td></tr>
+<tr><td>Reading text, barcodes and scanning on the phone</td><td>Google ML Kit, which reads text and scans pages on your phone, sends diagnostic and usage information about those features (for example which feature ran, how long it took, errors, the app version and device type). It does not send your scans, photos or the text it reads.</td><td>Google (ML Kit), as described in <a href="https://developers.google.com/ml-kit/terms">Google's ML Kit terms</a>.</td></tr>
 <tr><td>Ads (see below)</td><td>Information AdMob collects to show and measure ads.</td><td>Google AdMob.</td></tr>
 </table>
 </div>
@@ -65,7 +66,7 @@
 <table>
 <tr><th>Permission</th><th>Why it's used</th></tr>
 <tr><td>Internet and network state</td><td>AI suggestions, paper generation, model download, optional bank sync and ads. The app waits for Wi-Fi when you choose "Upload on Wi-Fi only".</td></tr>
-<tr><td>Notifications and a data-sync foreground service</td><td>To keep checking answers in the background after you scan, and show progress.</td></tr>
+<tr><td>Notifications</td><td>To show the progress of the optional on-device AI model download. Checking continues in the background without a notification.</td></tr>
 <tr><td>Photos you pick</td><td>"Import photos" uses Android's photo picker, so the app sees only the photos you select. The document scanner is provided by Google Play services and gives the app only the pages you scan; the app does not request camera permission.</td></tr>
 </table>
 </div>
@@ -76,6 +77,7 @@
 <h2>Keeping and deleting data</h2>
 <ul>
 <li>Your data stays on your phone until you delete it. You can delete an exam with everything in it (menu › Delete exam), remove a single scanned page, delete scanned pages of finished exams in Settings › Data &amp; privacy, or uninstall the app to remove everything.</li>
+<li>Full page photos of finished exams are deleted automatically after the period you choose in Settings › Data &amp; privacy (30 to 365 days). Cropped answers and marks stay so results can still be reviewed.</li>
 <li>We don't keep copies of your scans, answers or marks on our servers, so there is nothing for us to delete; questions about data handled by AI providers or AdMob can be sent to them or to us.</li>
 </ul>
 
