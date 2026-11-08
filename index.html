@@ -27,7 +27,7 @@
 <body>
 <main>
 <h1>Privacy Policy</h1>
-<p class="meta">Exam Checker: AI Paper Marking (package <code>com.examchecker.app</code>) · Developer: Mikao · Effective 14 October 2026</p>
+<p class="meta">Exam Checker: AI Paper Marking (package <code>com.examchecker.app</code>) · Developer: Mikao · Effective 8 November 2026</p>
 
 <div class="card">
 <p><strong>In short:</strong> Exam Checker helps teachers make exam papers, scan students' answer sheets and check them. Scans, student names, roll numbers and marks stay on your phone. When the app needs AI to suggest a mark or write a paper, it sends only the question, your answer key and the student's answer, never a name, roll number, class, school name or a full page. We have no accounts, and we don't sell data. Usage statistics (which screens are opened, how many pages are scanned, with a random app ID) go to Google Analytics, and you can switch them off. Ads, where shown, come from Google AdMob.</p>
@@ -48,7 +48,8 @@
 <div class="table-wrap">
 <table>
 <tr><th>When</th><th>What is sent</th><th>To whom</th></tr>
-<tr><td>Suggesting a mark for a written answer (only when the phone can't decide alone)</td><td>The question, your marking points or model answer, the student's answer as text, and only when the text can't be read on the phone (for example some Urdu handwriting) a cropped image of that one answer. Items are labelled with random IDs. No names, roll numbers, class or school name, and never a full page.</td><td>The app's AI service (Cloudflare Workers AI, with Google Gemini as a backup), or the AI provider you chose yourself with your own key (for example OpenAI, Anthropic, Google, Mistral, Groq, OpenRouter, DeepSeek, xAI, Together, Qwen, Cloudflare or your school's server).</td></tr>
+<tr><td>Suggesting a mark for a written answer (only when the phone can't decide alone)</td><td>The question, your marking points or model answer, the student's answer as text, and only when the text can't be read on the phone (for example some Urdu handwriting) a cropped image of that one answer. Items are labelled with random IDs. No names, roll numbers, class or school name.</td><td>The app's AI service (Cloudflare Workers AI, with Google Gemini as a backup), or the AI provider you chose yourself with your own key (for example OpenAI, Anthropic, Google, Mistral, Groq, OpenRouter, DeepSeek, xAI, Together, Qwen, Cloudflare or your school's server).</td></tr>
+<tr><td>Reading a page the phone can't read (for example handwritten Urdu), only with the app's included AI or your own AI key</td><td>A reduced-size photo of that one page, so the AI can read the answers and split them by question. The photo can show whatever the student wrote on it, including a name or roll number if written on that page. It is sent over an encrypted connection, used only to read the page, and not stored by us.</td><td>The app's AI service (Cloudflare Workers AI, with Google Gemini as a backup), or the AI provider you chose yourself with your own key.</td></tr>
 <tr><td>Generating an exam paper with AI</td><td>Class level, subject, chosen topics, number and types of questions, and paper language. No student information.</td><td>The same AI service or your chosen provider.</td></tr>
 <tr><td>Downloading the optional on-device AI model</td><td>A normal file download request.</td><td>Hugging Face (where the Gemma model files are hosted).</td></tr>
 <tr><td>School question bank sync (optional, off unless you set it up)</td><td>Questions, answer keys and verified answer texts from your question bank. No student names or roll numbers.</td><td>The server address you enter.</td></tr>
@@ -65,6 +66,7 @@
 
 <h2>Advertising</h2>
 <p>The app may show ads from Google AdMob. When it does, AdMob may collect your device's advertising ID, IP address, approximate location and information about ad interactions and app performance, to show and measure ads and to prevent fraud, as described in <a href="https://policies.google.com/technologies/partner-sites">How Google uses information from sites or apps that use its services</a>. Where required (for example in the EEA, UK and Switzerland) the app asks for your consent first, and you can change your choice in the app's settings. You can reset or delete your advertising ID in Android settings. Ads never receive scans, student information, questions or marks.</p>
+<p>Before the app's included AI checks a paper, the app may ask you to watch a short rewarded ad. When the ad finishes, Google AdMob tells our server, which keeps a random one-time code for a few hours so the check can go ahead. The code contains no name, email, roll number or exam content and stops working after a few hours. If you use your own AI key, no rewarded ad is needed.</p>
 
 <h2>Permissions</h2>
 <div class="table-wrap">
