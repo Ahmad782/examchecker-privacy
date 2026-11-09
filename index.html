@@ -27,10 +27,10 @@
 <body>
 <main>
 <h1>Privacy Policy</h1>
-<p class="meta">Exam Checker: AI Paper Marking (package <code>com.examchecker.app</code>) · Developer: Mikao · Effective 8 November 2026</p>
+<p class="meta">Exam Checker: AI Paper Marking (package <code>com.examchecker.app</code>) · Developer: Mikao · Effective 9 November 2026</p>
 
 <div class="card">
-<p><strong>In short:</strong> Exam Checker helps teachers make exam papers, scan students' answer sheets and check them. Scans, student names, roll numbers and marks stay on your phone. When the app needs AI to suggest a mark or write a paper, it sends only the question, your answer key and the student's answer, never a name, roll number, class, school name or a full page. We have no accounts, and we don't sell data. Usage statistics (which screens are opened, how many pages are scanned, with a random app ID) go to Google Analytics, and you can switch them off. Ads, where shown, come from Google AdMob.</p>
+<p><strong>In short:</strong> Exam Checker helps teachers make exam papers, scan students' answer sheets and check them. Scans, student names, roll numbers and marks stay on your phone. When the app needs AI to suggest a mark or write a paper, it sends only the question, your answer key and the student's answer, never a name, roll number, class, school name or a full page. There are no sign-ups: the app uses a random install ID (not linked to your name or Google account) to count free AI-checked papers, confirm an Exam Checker Pro subscription and run invite codes. If you join a School, the exams and results you choose to share with it are kept on our server for the other teachers in it. We don't sell data. Usage statistics (which screens are opened, how many pages are scanned, with a random app ID) go to Google Analytics, and you can switch them off. Ads, where shown, come from Google AdMob.</p>
 </div>
 
 <h2>Who this policy is for</h2>
@@ -51,6 +51,10 @@
 <tr><td>Suggesting a mark for a written answer (only when the phone can't decide alone)</td><td>The question, your marking points or model answer, the student's answer as text, and only when the text can't be read on the phone (for example some Urdu handwriting) a cropped image of that one answer. Items are labelled with random IDs. No names, roll numbers, class or school name.</td><td>The app's AI service (Cloudflare Workers AI, with Google Gemini as a backup), or the AI provider you chose yourself with your own key (for example OpenAI, Anthropic, Google, Mistral, Groq, OpenRouter, DeepSeek, xAI, Together, Qwen, Cloudflare or your school's server).</td></tr>
 <tr><td>Reading a page the phone can't read (for example handwritten Urdu), only with the app's included AI or your own AI key</td><td>A reduced-size photo of that one page, so the AI can read the answers and split them by question. The photo can show whatever the student wrote on it, including a name or roll number if written on that page. It is sent over an encrypted connection, used only to read the page, and not stored by us.</td><td>The app's AI service (Cloudflare Workers AI, with Google Gemini as a backup), or the AI provider you chose yourself with your own key.</td></tr>
 <tr><td>Generating an exam paper with AI</td><td>Class level, subject, chosen topics, number and types of questions, and paper language. No student information.</td><td>The same AI service or your chosen provider.</td></tr>
+<tr><td>Free AI papers and invite codes</td><td>A random install ID created by the app, the random ID of each paper checked (so a paper is counted once), and the invite code if you enter one. No names, exam content or Google account.</td><td>Our server (Cloudflare), which keeps the monthly count.</td></tr>
+<tr><td>Exam Checker Pro (optional subscription)</td><td>The Google Play purchase token and product ID, with the install ID. Our server checks the token with Google Play to confirm the subscription. Payment is handled entirely by Google Play; we never see your card or bank details.</td><td>Our server (Cloudflare) and Google Play.</td></tr>
+<tr><td>School (optional, only if you create or join one)</td><td>The school name, your teacher name and the install ID; exams you choose to share (questions, answer keys, marks scheme); and results you choose to send (each student's roll number, name, marks, total and grade).</td><td>Our server (Cloudflare), visible to the teachers in that school.</td></tr>
+<tr><td>Voice typing (only when you tap the microphone)</td><td>Your spoken words, to turn them into text. The app gets back only the text and does not record or keep audio.</td><td>Android's speech recognition service on your phone (usually Google), which may work on the device or use Google's servers under Google's terms.</td></tr>
 <tr><td>Downloading the optional on-device AI model</td><td>A normal file download request.</td><td>Hugging Face (where the Gemma model files are hosted).</td></tr>
 <tr><td>School question bank sync (optional, off unless you set it up)</td><td>Questions, answer keys and verified answer texts from your question bank. No student names or roll numbers.</td><td>The server address you enter.</td></tr>
 <tr><td>Reading text, barcodes and scanning on the phone</td><td>Google ML Kit, which reads text and scans pages on your phone, sends diagnostic and usage information about those features (for example which feature ran, how long it took, errors, the app version and device type). It does not send your scans, photos or the text it reads.</td><td>Google (ML Kit), as described in <a href="https://developers.google.com/ml-kit/terms">Google's ML Kit terms</a>.</td></tr>
@@ -73,19 +77,23 @@
 <table>
 <tr><th>Permission</th><th>Why it's used</th></tr>
 <tr><td>Internet and network state</td><td>AI suggestions, paper generation, model download, optional bank sync and ads. The app waits for Wi-Fi when you choose "Upload on Wi-Fi only".</td></tr>
+<tr><td>Microphone</td><td>Voice typing in English or Urdu, only while you hold or tap the microphone button. Asked the first time you use it; the app works without it.</td></tr>
 <tr><td>Notifications</td><td>To show the progress of the optional on-device AI model download. Checking continues in the background without a notification.</td></tr>
 <tr><td>Photos you pick</td><td>"Import photos" uses Android's photo picker, so the app sees only the photos you select. The document scanner is provided by Google Play services and gives the app only the pages you scan; the app does not request camera permission.</td></tr>
 </table>
 </div>
 
 <h2>Sharing and selling</h2>
-<p>We don't sell personal data and don't share it with third parties for their own purposes. Information leaves the phone only as described above, or when you choose to share something yourself (for example exporting results as CSV or sharing a paper PDF through Android's share sheet).</p>
+<p>We don't sell personal data and don't share it with third parties for their own purposes. Information leaves the phone only as described above (shared School data is visible only to the teachers in that school), or when you choose to share something yourself (for example exporting results as CSV or sharing a paper PDF through Android's share sheet).</p>
 
 <h2>Keeping and deleting data</h2>
 <ul>
 <li>Your data stays on your phone until you delete it. You can delete an exam with everything in it (menu › Delete exam), remove a single scanned page, delete scanned pages of finished exams in Settings › Data &amp; privacy, or uninstall the app to remove everything.</li>
 <li>Full page photos of finished exams are deleted automatically after the period you choose in Settings › Data &amp; privacy (30 to 365 days). Cropped answers and marks stay so results can still be reviewed.</li>
-<li>We don't keep copies of your scans, answers or marks on our servers, so there is nothing for us to delete; questions about data handled by AI providers, Google Analytics or AdMob can be sent to them or to us.</li>
+<li>We don't keep copies of your scans or of the answers sent for AI checking.</li>
+<li>Free-paper counts are deleted automatically about 70 days after the month ends. Subscription records are deleted automatically about 90 days after the app last checked them. A small record for your install ID (its invite code and who invited it) is kept so invite rewards are not given twice, until you ask us to delete it.</li>
+<li>If you leave a School, your membership is removed; exams and results you shared stay for the school until the teacher who shared them or the head teacher deletes them. When the head teacher, as the last member, leaves, the school and everything shared in it is deleted.</li>
+<li>To have any data linked to your install ID deleted, email us at the address below with your invite code (shown on the Exam Checker Pro screen in the app), and we will delete it within 30 days. Questions about data handled by AI providers, Google Play, Google Analytics or AdMob can be sent to them or to us.</li>
 </ul>
 
 <h2>Security</h2>
